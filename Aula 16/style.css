@@ -1,0 +1,65 @@
+@charset "utf-8";
+*{
+    padding:0;
+    margin:0;
+
+}
+
+body{
+    /* vw= viewwidth wh= viewheight*/
+    margin:0;
+    padding:0;
+    /* a tela sendo visualizada em questão, referente em altura e largura respectivamente */
+    height:100vh;
+    width:100vw;
+    background-color: #545f73;
+
+}
+
+.container{
+    height: 460px;
+    width: 800px;
+    overflow: hidden;
+    /* altera a posição do elemento em questão e a distância relativa a mesma */
+    position:absolute;
+    /* permite o uso das linhas a seguir: */
+    top: 50%;
+    left: 50%;
+    /*modifica a posição do eixo central */
+    transform:translate(-50%, -50%)
+
+}
+
+.imagem img{
+    height:100%;
+    width:100%;
+
+}
+
+/* a label pode ser representada e alterada pelo .bar, sendo o elemento filho da class navegacao */
+/* essa parte meio que cria um seletor de imagens que fica na parte inferior da mesma */
+.bar {
+    background-color: #eb8415;
+    width:30px;
+    height:5px;
+    margin:5px;
+    cursor: pointer;
+    transition: .5s ;
+}
+
+.navegacao {
+    position:absolute;
+    bottom: 20px;
+    left: 20%;
+    transform: translate(50%);
+    display: flex;
+    
+}
+
+.bar:hover{
+    background: #ff0000;
+}
+
+input {
+    display: none;
+}
